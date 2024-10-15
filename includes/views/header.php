@@ -7,7 +7,7 @@
           margin: 0;
           padding: 0;
           overflow: hidden;
-          background-color: #333;
+          background-color: #344a3c;
         }
         
         li {
@@ -23,21 +23,21 @@
         }
         
         li a:hover {
-          background-color: #111;
+          background-color: black;
         }
         </style>
         </head>
         <body>
-        
-        <ul>
-            <li><img src="https://hapy-vernetzt.de/cms/wp-content/uploads/2023/10/Regional-vernetzen-1.png" width="40" height="40"></li>
+        <div style="font-size: 4em;">
+        <ul style="text-decoration: underline solid black;">
+            <li><img src="https://hapy-vernetzt.de/cms/wp-content/uploads/2023/10/Regional-vernetzen-1.png" width="93" height="93"></li>
          <div style="float: right;">
-            <li><a href="#home">Home</a></li>
-          <li><a href="#Pflanze">Pflanze</a></li>
-          <li><a href="#Kontakt">Kontakt</a></li>
+          <li style="border: groove green;"><a href="#home"><u>Home</u></a></li>
+          <li style="border: groove green;"><a href="#Pflanze"><u>Pflanze</u></a></li>
+          <li style="border: groove green;"><a href="#Kontakt"><u>Kontakt</u></a></li>
          </div>
         </ul>
-        
+        <div>
         </body>
         
 </html>
