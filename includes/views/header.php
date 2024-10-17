@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #344a3c;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background-color: black;
-        }
-        </style>
-        </head>
-        <body>
-        <div style="font-size: 4em;">
-        <ul style="text-decoration: underline solid black;">
-            <li><img src="/assets/logo-icon.png" width="93" height="93"></li>
-         <div style="float: right;">
-          <li style="border: groove green;"><a href="#home"><u>Home</u></a></li>
-          <li style="border: groove green;"><a href="#Pflanze"><u>Pflanze</u></a></li>
-          <li style="border: groove green;"><a href="#Kontakt"><u>Kontakt</u></a></li>
-         </div>
-        </ul>
-        <div>
-        </body>
-        
-</html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="/css/mdb.min.css" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
