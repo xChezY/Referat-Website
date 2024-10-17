@@ -30,7 +30,7 @@
         <body>
         <div style="font-size: 4em;">
         <ul style="text-decoration: underline solid black;">
-            <li><img src="https://hapy-vernetzt.de/cms/wp-content/uploads/2023/10/Regional-vernetzen-1.png" width="93" height="93"></li>
+            <li><img src="/assets/logo-icon.png" width="93" height="93"></li>
          <div style="float: right;">
           <li style="border: groove green;"><a href="#home"><u>Home</u></a></li>
           <li style="border: groove green;"><a href="#Pflanze"><u>Pflanze</u></a></li>

@@ -32,7 +32,7 @@
 <body>
 <footer>
     <ul>
-        <li><img src="https://hapy-vernetzt.de/cms/wp-content/uploads/2023/10/Regional-vernetzen-1.png" width="100" height="100"></li>
+        <li><img src="/assets/logo-icon.png" width="100" height="100"></li>
 
             <li><a href="mailto:Carlo.niermann@iu-study.org">Carlo.niermann@iu-study.org</a></li>
             <li><a>Tel.1234567890</a></li>
