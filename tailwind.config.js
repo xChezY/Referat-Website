@@ -1,17 +1,67 @@
 module.exports = {
-    content: [
-        "./contact/**/*.php",
-        "./includes/**/*.php",
-        "./plants/**/*.php",
-        "./registerplant/**/*.php",
-        "./index.php",
-        "./node_modules/flowbite/**/*.js"
-
-    ],
-    theme: {
-      extend: {},
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: "#FAFCF3",
+          100: "#F4F7E3",
+          200: "#E8F0C7",
+          300: "#DDE8AA",
+          400: "#D2E18E",
+          500: "#C6D972",
+          600: "#BDD35A",
+          700: "#B0CB3C",
+          800: "#768925",
+          900: "#3B4412",
+          950: "#1F240A",
+        },
+      },
     },
-    plugins: [
-      require('flowbite/plugin'),
-    ],
-  }
+    fontFamily: {
+      body: [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+      sans: [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+    },
+  },
+  content: [
+    "./contact/**/*.php",
+    "./includes/**/*.php",
+    "./plants/**/*.php",
+    "./registerplant/**/*.php",
+    "./index.php",
+    "./node_modules/flowbite/**/*.js",
+  ],
+  plugins: [require("flowbite/plugin")],
+};
