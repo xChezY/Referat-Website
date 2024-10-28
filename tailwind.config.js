@@ -4,11 +4,14 @@ module.exports = {
         "./includes/**/*.php",
         "./plants/**/*.php",
         "./registerplant/**/*.php",
-        "./index.php"
+        "./index.php",
+        "./node_modules/flowbite/**/*.js"
 
     ],
     theme: {
       extend: {},
     },
-    plugins: [],
+    plugins: [
+      require('flowbite/plugin'),
+    ],
   }
