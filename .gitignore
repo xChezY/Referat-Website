@@ -1,6 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/composer,php-cs-fixer,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=composer,php-cs-fixer,windows
-
+css/output.css
 database.db
 
 ### Composer ###
