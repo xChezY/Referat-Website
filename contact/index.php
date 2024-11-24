@@ -22,8 +22,8 @@
         </div>
         <h2 style="text-align:center"><strong>Impressum</strong></h2> <br>
         <div style="display: flex; justify-content: center">
-            <p>adsfoif</p>
-
+                <?php include "../contact/impressum.php"; ?>
+            </div>
             <?php include "../includes/views/footer.php"; ?>
         </div>
         </div>

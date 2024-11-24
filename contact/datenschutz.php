@@ -2,7 +2,7 @@
 echo <<<HTML
 <div style="text-align: block; max-width: 1400px; margin: 1 auto;">
     <p><strong>1. Verantwortliche Stelle:</strong><br>Die verantwortliche Stelle für die Datenverarbeitung ist:</p>
-    <p>Name und Kontaktdaten<br>Serverstandort: Frankfurt, Deutschland</p>
+    <p>Carlo Niermann und Bui Anh Minh Leon Phan <br>Serverstandort: Recklinghausen, Deutschland</p>
 
     <p><strong>2. Erhobene Daten:</strong></p>
     <ul>
