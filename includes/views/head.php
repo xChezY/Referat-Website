@@ -4,4 +4,3 @@
   <title><?php echo $title ?? "Plant Monitor" ?></title>
   <link href="/css/output.css" rel="stylesheet">
   <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-</head>

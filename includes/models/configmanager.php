@@ -1,6 +1,6 @@
 <?php
 
-namespace PlantMonitor;
+namespace Referat;
 
 use Symfony\Component\Yaml\Yaml;
 

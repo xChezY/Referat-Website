@@ -1,6 +1,6 @@
 <?php
 
-namespace PlantMonitor;
+namespace Referat;
 
 use DateTime;
 use Dotenv\Dotenv;
@@ -14,6 +14,9 @@ class Database
     private string $apiKey;
 
     private string $bucket;
+
+    private string $orgid;
+
     private $range = "4h";
 
     public function __construct()

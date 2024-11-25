@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
 <?php include "includes/views/head.php"; ?>
+</head>
 
 <body>
     <?php include "includes/views/navbar.php"; ?>

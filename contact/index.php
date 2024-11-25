@@ -4,10 +4,11 @@
     $title = "Kontakt";
     include "../includes/views/head.php";
 ?>
+</head>
 
 <body>
     <?php include "../includes/views/navbar.php"; ?>
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-gray-900 my-10">
         <div class="gap-16 justify-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <h1 style="text-align:center"><strong>Kontakt</strong></h1>
             <form action="mailto:Carlo.niermann@iu-study.org" method="post">

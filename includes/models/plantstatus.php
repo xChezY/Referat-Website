@@ -1,6 +1,6 @@
 <?php
 
-namespace PlantMonitor;
+namespace Referat;
 
 enum PlantStatus
 {
