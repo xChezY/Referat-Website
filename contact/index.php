@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
-<?php include "../includes/views/head.php"; ?>
+<?php 
+    $title = "Kontakt";
+    include "../includes/views/head.php";
+?>
 
 <body>
     <?php include "../includes/views/navbar.php"; ?>

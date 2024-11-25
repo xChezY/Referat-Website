@@ -6,7 +6,7 @@
     <?php include "includes/views/navbar.php"; ?>
     <section
         class="flex flex-col min-h-screen bg-slate-800 text-white bg-center bg-cover bg-blend-overlay bg-fixed bg-black/30"
-        style="background-image: url('https://img.freepik.com/premium-photo/smart-garden-sensors-monitoring-plant-health-soil-conditions-sun-exposure-solid-color-background-4k-ultra-hd_964851-117123.jpg')">
+        style="background-image: url('https://img.freepik.com/premium-photo/smart-garden-sensors-monitoring-plant-health-soil-conditions-sun-exposure-solid-color-background-4k-ultra-hd_964851-117123.jpg?w=1150')">
         <div class="flex-1 flex items-center">
             <div class="text-center mx-auto">
                 <h1 class="text-6xl font-semibold">PlantMonitor</h1>
