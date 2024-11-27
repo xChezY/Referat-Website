@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
-<?php include "includes/views/head.php"; ?>
+<?php
+$title = "Plant Monitor";
+include "includes/views/head.php";
+?>
 </head>
 
 <body>

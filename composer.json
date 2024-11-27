@@ -5,7 +5,7 @@
         "symfony/yaml": "^7.1"
     },
     "autoload": {
-        "psr-4": {"Referat\\": "includes/models"}
+        "psr-4": {"Referat\\": "includes/models/"}
     },
     "scripts": {
         "dev" : [

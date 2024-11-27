@@ -1,15 +1,21 @@
+<?php
+require_once '../vendor/autoload.php' ;
+?>
+
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
 <?php
 $title = "Pflanzen";
 include "../includes/views/head.php";
-?>
-<script src="https://maps.googleapis.com/maps/api/js?key=<?php
-use Dotenv\Dotenv; //TODO Warum wird die Klasse nicht gefunden?
 
-$dotenv = Dotenv::createImmutable(__DIR__ . "/../../");
+use Dotenv\Dotenv; //TODO Warum wird die Klasse nicht gefunden?
+$dotenv = Dotenv::createImmutable(__DIR__ . "/../");
 $dotenv->load();
-echo $_ENV['GOOGLE_MAPS_API_KEY'] ?>">
+$api_key = $_ENV['GOOGLE_MAPS_API_KEY']
+
+?>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $api_key ?><?php
+ ?>">
 </script>
 <script>
     const mapStyle = [
