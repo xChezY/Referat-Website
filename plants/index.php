@@ -1,5 +1,5 @@
 <?php
-require_once '../vendor/autoload.php' ;
+require_once '../vendor/autoload.php';
 ?>
 
 <!DOCTYPE html>
@@ -7,211 +7,34 @@ require_once '../vendor/autoload.php' ;
 <?php
 $title = "Pflanzen";
 include "../includes/views/head.php";
-
-use Dotenv\Dotenv; //TODO Warum wird die Klasse nicht gefunden?
-$dotenv = Dotenv::createImmutable(__DIR__ . "/../");
-$dotenv->load();
-$api_key = $_ENV['GOOGLE_MAPS_API_KEY']
-
 ?>
-<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $api_key ?><?php
- ?>">
-</script>
-<script>
-    const mapStyle = [
-        {
-            "featureType": "all",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "weight": "2.00"
-                }
-            ]
-        },
-        {
-            "featureType": "all",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "color": "#9c9c9c"
-                }
-            ]
-        },
-        {
-            "featureType": "all",
-            "elementType": "labels.text",
-            "stylers": [
-                {
-                    "visibility": "on"
-                }
-            ]
-        },
-        {
-            "featureType": "landscape",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "color": "#f2f2f2"
-                }
-            ]
-        },
-        {
-            "featureType": "landscape",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "landscape.man_made",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "saturation": -100
-                },
-                {
-                    "lightness": 45
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#eeeeee"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#7b7b7b"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "labels.text.stroke",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "road.highway",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "simplified"
-                }
-            ]
-        },
-        {
-            "featureType": "road.arterial",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "transit",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "color": "#46bcec"
-                },
-                {
-                    "visibility": "on"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#c8d7d4"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#070707"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "labels.text.stroke",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        }
-    ];
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
 
-    function initMap() {
-        const mapCenter = { lat: 51.5074, lng: -0.1278 };
-
-        const map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 13,
-            center: mapCenter,
-            styles: mapStyle
-        });
-
-        const marker = new google.maps.Marker({
-            position: mapCenter,
-            map: map,
-            title: "Hier ist London!"
-        });
-    }
-</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 </head>
 
-<body onload="initMap()">
+<body>
     <?php include "../includes/views/navbar.php"; ?>
     <section class="bg-white dark:bg-gray-900 my-10">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-            <div class="gap-4 mt-8" id="map"></div>
+            <div class="gap-4 mt-8 h-[550px] z-0" id="map"></div>
+            <script>
+                var map = L.map('map').setView([51.505, -0.09], 13);
+                var Jawg_Light = L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token=8UsGXrnys5mnswuRb3DlEMpE4tDnm9kGNv0FIzQ6UKrMFkcKxu4tMLRFmF4IFnE7', {
+                    attribution: 'Plant Monitor',
+                    minZoom: 0,
+                    maxZoom: 22,
+                    accessToken: "8UsGXrnys5mnswuRb3DlEMpE4tDnm9kGNv0FIzQ6UKrMFkcKxu4tMLRFmF4IFnE7"
+                });
+                Jawg_Light.addTo(map);
+                var marker = L.marker([51.5, -0.09]).addTo(map);
+                marker.bindPopup("<b>Hello world!</b><br>I am a popup.");
+            </script>
+
             <div class="lg:grid-rows-4">
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Schaue dir
@@ -220,7 +43,7 @@ $api_key = $_ENV['GOOGLE_MAPS_API_KEY']
 
                     <div
                         class="mt-8 flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow lg:flex-row lg:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                        <img class="rounded-full object-cover h-48 w-48 p-4"
+                        <img class="rounded-full object-cover h-36 w-36 p-4"
                             src="https://www.olerum.de/content/files/41316/Cucurbita-pepo-930x600-proportionalsmallest.webp"
                             alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
@@ -235,7 +58,7 @@ $api_key = $_ENV['GOOGLE_MAPS_API_KEY']
 
                     <div
                         class="mt-8 flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow lg:flex-row lg:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                        <img class="rounded-full object-cover h-48 w-48 p-4"
+                        <img class="rounded-full object-cover h-36 w-36 p-4"
                             src="https://www.olerum.de/content/files/41316/Cucurbita-pepo-930x600-proportionalsmallest.webp"
                             alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
@@ -249,7 +72,7 @@ $api_key = $_ENV['GOOGLE_MAPS_API_KEY']
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     <div
                         class="mt-8 flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow lg:flex-row lg:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                        <img class="rounded-full object-cover h-48 w-48 p-4"
+                        <img class="rounded-full object-cover h-36 w-36 p-4"
                             src="https://www.olerum.de/content/files/41316/Cucurbita-pepo-930x600-proportionalsmallest.webp"
                             alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
