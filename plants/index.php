@@ -65,15 +65,33 @@ include "../includes/views/head.php";
                         </div>
                     </div>
                     <div class="mt-6 grid grid-column-12 gap-4">
+                        <div class="col-start-1 col-span-2 flex items-center justify-center">
+                            <p class="text-sm font-normal text-gray-500 dark:text-gray-400 mr-2">Ideal:</p>
+                            <svg class="w-3 h-3 fill-primary-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8" />
+                            </svg>
+                        </div>
+                        <div class="col-start-4 col-span-2 flex items-center justify-center">
+                            <p class="text-sm font-normal text-gray-500 dark:text-gray-400 mr-2">Zu niedrig:</p>
+                            <svg class="w-3 h-3 fill-red-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8" />
+                            </svg>
+                        </div>
+                        <div class="col-start-7 col-span-2 flex items-center justify-center">
+                            <p class="text-sm font-normal text-gray-500 dark:text-gray-400 mr-2">Zu hoch:</p>
+                            <svg class="w-3 h-3 fill-purple-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"/>
+                            </svg>
+                        </div>
                         <a class="col-start-11 flex items-center justify-center" href="/">
-                        <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
-                        </svg>
+                            <svg class="w-6 h-6 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
+                            </svg>
                         </a>
-                        <a class="col-start-12 flex items-center justify-center"  href="/">
-                        <svg class="w-6 h-6 text-primary-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
-                        </svg>
+                        <a class="col-start-12 flex items-center justify-center" href="/">
+                            <svg class="w-6 h-6 text-primary-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+                            </svg>
                         </a>
                     </div>
                 </div>
