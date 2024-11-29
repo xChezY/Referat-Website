@@ -1,6 +1,10 @@
 {
   "dependencies": {
-    "flowbite": "^2.5.2"
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "flowbite": "^2.5.2",
+    "nodemailer": "^6.9.16"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.14"
