@@ -1,4 +1,4 @@
-  <form action="https://formsubmit.co/Carlo.Niermann@iu-study.org" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+  <form action="https://formsubmit.co/Carlo.Niermann@iu-study.org" method="POST" class="mx-auto max-w-xl mt-6">
     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div>
         <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="mt-10">
-      <button type="submit" class="rounded-md bg-indigo-600 px-4 py-2 black shadow-sm hover:bg-indigo-500 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600">
+      <button type="submit" class="rounded-md bg-primary-600 px-4 py-2 black shadow-sm hover:bg-primary-500 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary-600">
         Send Email
       </button>
     </div>
