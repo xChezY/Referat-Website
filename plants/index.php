@@ -1,10 +1,7 @@
-<?php
-require_once '../vendor/autoload.php';
-?>
-
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
 <?php
+require_once '../vendor/autoload.php';
 $page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT, ['options' => ['default' => 1, 'min_range' => 1]]);
 $title = "Pflanzen";
 
