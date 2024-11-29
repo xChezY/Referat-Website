@@ -7,69 +7,6 @@ $title = "Pflanzen";
 
 $database = new Referat\Database("../database.db");
 
-/*
-$database->clear();
-$database->insertPlant([
-    'name' => 'Aloe Vera',
-    'current_temperature' => 22,
-    'min_temperature' => 15,
-    'max_temperature' => 30,
-    'current_water' => 50,
-    'min_water' => 30,
-    'max_water' => 70,
-    'latitude' => 51.44,
-    'longitude' => 7.006
-]);
-
-$database->insertPlant([
-    'name' => 'Basilikum',
-    'current_temperature' => 20,
-    'min_temperature' => 18,
-    'max_temperature' => 25,
-    'current_water' => 30,
-    'min_water' => 40,
-    'max_water' => 80,
-    'latitude' => 51.4598,
-    'longitude' => 6.9871
-]);
-
-$database->insertPlant([
-    'name' => 'Lavendel',
-    'current_temperature' => 8,
-    'min_temperature' => 10,
-    'max_temperature' => 28,
-    'current_water' => 40,
-    'min_water' => 20,
-    'max_water' => 60,
-    'latitude' => 51.453,
-    'longitude' => 7.045
-]);
-$database->insertPlant([
-    'name' => 'Rosmarin',
-    'current_temperature' => 30,
-    'min_temperature' => 12,
-    'max_temperature' => 25,
-    'current_water' => 45,
-    'min_water' => 30,
-    'max_water' => 60,
-    'latitude' => 51.4369,
-    'longitude' => 7.018
-]);
-
-$database->insertPlant([
-    'name' => 'Thymian',
-    'current_temperature' => 21,
-    'min_temperature' => 15,
-    'max_temperature' => 28,
-    'current_water' => 55,
-    'min_water' => 35,
-    'max_water' => 50,
-    'latitude' => 51.4650,
-    'longitude' => 7.0236
-]);
-*/
-
-
 $plants = $database->getThreePlants($page);
 
 include "../includes/views/head.php";
